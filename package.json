@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "codegen:server": "graphql-codegen --config graphql/codegen-server.yaml"
   },
   "dependencies": {
     "apollo-server-micro": "^3.10.2",
