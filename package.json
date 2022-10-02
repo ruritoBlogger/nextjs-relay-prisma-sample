@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build"t
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "relay": "relay-compiler",
     "codegen:server": "graphql-codegen --config graphql/codegen-server.yaml"
   },
   "dependencies": {
@@ -25,10 +26,12 @@
     "@types/node": "18.7.23",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "babel-plugin-relay": "^14.1.0",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.7.1",
+    "relay-compiler": "^14.1.0",
     "typescript": "4.8.4"
   }
 }
