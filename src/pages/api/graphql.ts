@@ -8,7 +8,17 @@ import { Resolvers } from '../../../graphql/dist/generated-server';
 const path = join(process.cwd(), 'graphql', 'schema.graphql');
 const typeDefs = readFileSync(path).toString('utf-8');
 
-const resolvers: Resolvers = {};
+const todos = [
+  { id: '1', title: 'Alice', content: 'content 1' },
+  { id: '2', title: 'Bob', content: 'content 2' },
+  { id: '3', title: 'Carol', content: 'content 3' },
+];
+
+const resolvers: Resolvers = {
+  Query: {
+    todos: () => todos,
+  },
+};
 
 const apolloServer = new ApolloServer({ typeDefs, resolvers });
 
