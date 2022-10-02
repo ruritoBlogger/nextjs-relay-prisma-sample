@@ -15,6 +15,7 @@ const TodosQuery = graphql`
 `;
 
 const Home: NextPage = () => {
+  // TODO: react render関数の中で定義しちゃダメらしいので移行先探す
   const preloadedQuery = loadQuery(RelayEnvironment, TodosQuery, {});
   const data = usePreloadedQuery(TodosQuery, preloadedQuery);
 
