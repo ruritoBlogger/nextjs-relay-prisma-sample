@@ -7,6 +7,7 @@
     "start": "next start",
     "lint": "next lint",
     "relay": "relay-compiler",
+    "relay:watch": "relay-compiler --watch",
     "codegen:server": "graphql-codegen --config graphql/codegen-server.yaml"
   },
   "dependencies": {
