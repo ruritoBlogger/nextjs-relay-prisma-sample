@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
-import { OperationType } from 'relay-runtime';
+import { TodoListQuery } from '../../graphql/__generated__/TodoListQuery.graphql';
 
 interface TodoListProps {
-  loadedQuery: PreloadedQuery<OperationType, {}>;
+  loadedQuery: PreloadedQuery<TodoListQuery, {}>;
 }
 
 export const TodosQuery = graphql`
@@ -17,7 +17,6 @@ export const TodosQuery = graphql`
 `;
 
 export const TodoList: React.FC<TodoListProps> = ({ loadedQuery }) => {
-  // TODO: validationしたい
   const data = usePreloadedQuery(TodosQuery, loadedQuery);
 
   return (
