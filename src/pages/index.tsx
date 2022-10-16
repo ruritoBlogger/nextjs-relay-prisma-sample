@@ -10,7 +10,7 @@ import {
 } from 'react-relay';
 import RelayEnvironment from '../lib/RelayEnvironment';
 import { OperationType } from 'relay-runtime';
-import { TodoList, TodosQuery } from '../components/TodoList/TodoList';
+import { TodoList, TodosQuery } from '../components/TodoList';
 
 const Home: NextPage = () => {
   // TODO: fetchQueryを検証する
