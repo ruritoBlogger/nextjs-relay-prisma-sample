@@ -4,6 +4,7 @@ module.exports = {
   src: './src',
   language: 'typescript', // "javascript" | "typescript" | "flow"
   schema: './graphql/schema.graphql',
+  artifactDirectory: './src/graphql/__generated__/',
   exclude: [
     '**/node_modules/**',
     '**/__mocks__/**',
