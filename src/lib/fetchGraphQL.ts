@@ -1,5 +1,7 @@
-// TODO: 型を厳密にする
-async function fetchGraphQL(text: string, variables: Record<string, any>) {
+import { Variables } from 'relay-runtime';
+
+// TODO: jsonに変換後の内容のバリデーションをやる
+async function fetchGraphQL(text: string, variables: Variables): Promise<any> {
   const response = await fetch('http://localhost:3000/api/graphql', {
     method: 'POST',
     headers: {

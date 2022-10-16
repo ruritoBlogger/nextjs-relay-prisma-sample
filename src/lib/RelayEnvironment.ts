@@ -1,10 +1,16 @@
-import { Environment, Network, RecordSource, Store } from 'relay-runtime';
+import {
+  Environment,
+  Network,
+  RecordSource,
+  Store,
+  Variables,
+} from 'relay-runtime';
 import fetchGraphQL from './fetchGraphQL';
 
 // Relay passes a "params" object with the query name and text. So we define a helper function
 // to call our fetchGraphQL utility with params.text.
-// TODO: 型情報を確定させる
-async function fetchRelay(params: any, variables: any) {
+// TODO: any型をやめる
+async function fetchRelay(params: any, variables: Variables) {
   console.log(
     `fetching query ${params.name} with ${JSON.stringify(variables)}`,
   );
