@@ -1,6 +1,7 @@
 {
   "extends": [
     "next",
+    "plugin:storybook/recommended",
     "prettier"
   ]
 }
