@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Suspense } from 'react';
+import React, { Suspense } from 'react';
 import { loadQuery } from 'react-relay';
 import RelayEnvironment from '../lib/RelayEnvironment';
 import {

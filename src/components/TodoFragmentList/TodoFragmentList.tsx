@@ -7,28 +7,21 @@ interface TodoListProps {
 }
 
 // TODO: fragment周りを書く
+/*
 export const TodosFragment = graphql`
   query TodoListQuery {
     todos {
       id
       title
-      content
     }
   }
 `;
+ */
 
 export const TodoFragmentList: React.FC<TodoListProps> = ({ loadedQuery }) => {
-  const data = usePreloadedQuery(TodosQuery, loadedQuery);
-
   return (
     <>
-      {data.todos.map((todo) => (
-        <div key={todo.id}>
-          <p>{todo.id}</p>
-          <p>{todo.title}</p>
-          <p>{todo.content}</p>
-        </div>
-      ))}
+      <p>Fragment</p>
     </>
   );
 };
