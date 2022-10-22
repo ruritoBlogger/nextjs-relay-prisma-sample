@@ -46,6 +46,8 @@
     "eslint-config-next": "12.3.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-storybook": "^0.6.6",
+    "msw": "^0.47.4",
+    "msw-storybook-addon": "^1.6.3",
     "prettier": "^2.7.1",
     "relay-compiler": "^14.1.0",
     "relay-compiler-language-typescript": "^15.0.1",
