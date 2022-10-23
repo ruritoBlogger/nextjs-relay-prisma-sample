@@ -35,7 +35,7 @@ export const TodoList: React.FC = () => {
   );
 };
 
-const InnerTodoList: React.FC<TodoListProps> = ({ loadedQuery }) => {
+export const InnerTodoList: React.FC<TodoListProps> = ({ loadedQuery }) => {
   const data = usePreloadedQuery(TodosQuery, loadedQuery);
 
   return (
