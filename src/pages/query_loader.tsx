@@ -1,11 +1,6 @@
 import type { NextPage } from 'next';
-import { TodoList, TodosQuery } from '../components/TodoList';
-import { fetchQuery } from 'relay-runtime';
-import RelayEnvironment from '../lib/RelayEnvironment';
-import {
-  TodoListQuery,
-  TodoListQuery$data,
-} from '../graphql/__generated__/TodoListQuery.graphql';
+import { TodosQuery } from '../components/TodoList';
+import { TodoListQuery } from '../graphql/__generated__/TodoListQuery.graphql';
 import { TodoQueryLoaderList } from '../components/TodoQueryLoaderList/TodoQueryLoaderList';
 import { useQueryLoader } from 'react-relay';
 import { useEffect, Suspense } from 'react';

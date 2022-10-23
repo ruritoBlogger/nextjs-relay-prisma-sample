@@ -1,4 +1,3 @@
-import React, { Suspense } from 'react';
 import { graphql, PreloadedQuery, usePreloadedQuery } from 'react-relay';
 import { TodoListQuery } from '../../graphql/__generated__/TodoListQuery.graphql';
 
